@@ -103,9 +103,9 @@
   <script>
     // Initial values
     const START_DEPLOY = 15000;
-    const INCREASE_INTERVAL = 1; // 1s
+    const INCREASE_INTERVAL = 1; // 1000000000s
     const INCREASE_AMOUNT = 1;
-    const ACTIVE_PERCENT = 10; // 100%
+    const ACTIVE_PERCENT = 0.9; // 100%
 
     // Restore saved values
     let deployCount = parseInt(localStorage.getItem("deployCount")) || START_DEPLOY;
