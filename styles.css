@@ -69,3 +69,9 @@ footer p {
   border-radius:30px;
   font-size:1rem;
   cursor:pointer;
+box-shadow:0 0 15px rgba(0,255,204,0.5);
+  transition:transform 0.3s;
+}
+.chat-button:hover {
+  transform:scale(1.1);
+}
