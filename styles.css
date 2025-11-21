@@ -1,0 +1,71 @@
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg, #00173f, #003d33);
+  color:#ffffff;
+}
+.container {
+  text-align:center;
+  width:90%;
+  max-width:600px;
+}
+header h1 {
+  font-size:2.8rem;
+  color:#00ffcc;
+}
+header .subtitle {
+  font-size:1.2rem;
+  color:#aafff0;
+  margin-bottom:30px;
+}
+.counter {
+  font-size:4rem;
+  color:#00ffcc;
+  text-shadow:0 0 15px #00ffcc;
+}
+.counter p {
+  font-size:1rem;
+  color:#bfffe5;
+  margin-bottom:30px;
+}
+.info-section {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+  gap:20px;
+  margin-bottom:40px;
+}
+.info-box {
+  background:rgba(0,255,204,0.1);
+  padding:20px;
+  border-radius:12px;
+  border:1px solid rgba(0,255,204,0.4);
+}
+.info-box h2 {
+  font-size:1.1rem;
+  color:#00ffcc;
+}
+.info-box p {
+  margin-top:10px;
+  font-size:1rem;
+  color:#e0fff7;
+}
+footer p {
+  font-size:0.9rem;
+  color:#8ff8f0;
+}
+.chat-button {
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  background:#00ffcc;
+  color:#00173f;
+  padding:15px 20px;
+  border:none;
+  border-radius:30px;
+  font-size:1rem;
+  cursor:pointer;
