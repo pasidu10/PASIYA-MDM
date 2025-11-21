@@ -5,7 +5,7 @@ const lastUpdateEl = document.getElementById('lastUpdate');
 
 let count = 2000000;
 const increment = 5;
-const intervalMs = 1000 / (increment/1); // one increment per second-ish
+const intervalMs = 1 / (increment/1); // one increment per second-ish
 
 function formatNum(num) {
   return num.toLocaleString();
