@@ -10,3 +10,36 @@ body {
 
 .container {
   max-width: 800px;
+margin: auto;
+  background-color: rgba(0,0,50,0.5);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #0099ff;
+}
+
+.stats p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#flags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#flags img {
+  width: 40px;
+  height: 25px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-box {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  height: 100px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
