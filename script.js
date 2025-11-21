@@ -1,18 +1,20 @@
-🧮 `script.js`
-```js
-const counterEl = document.getElementById('counter');
-let count = 2000000;        // Start value
-const rate = 5;             // Increment per interval
-const intervalMs = 1000 / rate;  // e.g. 1s for 5 increments/sec
 
-function formatNumber(num) {
-  return num.toLocaleString('en-US');
+```js
+const liveCountEl = document.getElementById('liveCount');
+const lastUpdateEl = document.getElementById('lastUpdate');
+
+let count = 2000000;
+const increment = 5;
+const intervalMs = 1000 / (increment/1); // one increment per second-ish
+
+function formatNum(num) {
+  return num.toLocaleString();
 }
 
 function updateCounter() {
-  count += rate;
-  counterEl.textContent = formatNumber(count) + '+';
+  count += increment;
+  liveCountEl.textContent = formatNum(count);
+  lastUpdateEl.textContent = new Date().toLocaleString();
 }
 
-setInterval(updateCounter, intervalMs);
-```
+setInterval(updateCounter, 1000);
